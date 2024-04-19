@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+   
+    <title>SANGAM - offical site</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+        
+        <a href="#" class="brand">Sangam</a>
+        <ul>
+            <li><a href="#">cart</a></li>
+            <li><a href="#">log in</a></li>
+        </ul>
+    </nav>
+
+ <section class="head" id="head1">
+        <img class="headimg"  src="/images/wwear/headw1.jpg" type="video/mp4" autoplay loop muted plays-inline class="video" ></img>
+    </section>
+     
+   <div class="space"></div>
+   <div style="text-align: center; font-size:xx-large"><b>WOMEN WEAR</b> </div>
+   <div class="space"></div>
+    
+    <div id="info">
+        
+   <div class="img">
+    <img class="front" src="/images/wwear/f2.jpg">
+    <img class="back" src="/images/wwear/f3.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> Black sweatpants</h4>
+        <p><b>Price:</b> Rs. 1500/-</p>
+        <button>Add to cart</button>
+    </div>
+ </div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f4.jpg">
+    <img class="back" src="/images/wwear/f5.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> brown sweatpants</h4>
+        <p><b>Price:</b> Rs. 1700/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f6.jpg">
+    <img class="back" src="/images/wwear/f7.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b>grey sweatpants</h4>
+        <p><b>Price:</b> Rs. 1600/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f8.jpg">
+    <img class="back" src="/images/wwear/f9.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> Brown denim skirt</h4>
+        <p><b>Price:</b> Rs. 1650/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f10.jpg">
+    <img class="back" src="/images/wwear/f11.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> black denim skirt</h4>
+        <p><b>Price:</b> Rs. 1750/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f12.jpg">
+    <img class="back" src="/images/wwear/f13.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> white travis scott tshirt</h4>
+        <p><b>Price:</b> Rs. 1600/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f14.jpg">
+    <img class="back" src="/images/wwear/f17.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> black travis scott tshirt</h4>
+        <p><b>Price:</b> Rs. 1750/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <!-- start item 8 -->
+ <div class="img">
+    <img class="front" src="/images/wwear/f15.jpg">
+    <img class="back" src="/images/wwear/f16.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> brown travis scott tshir</h4>
+        <p><b>Price:</b> Rs. 1690/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+ <div class="img">
+    <img class="front" src="/images/wwear/f18.jpg">
+    <img class="back" src="/images/wwear/f19.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b>blue full sleeve top</h4>
+        <p><b>Price:</b> Rs. 600/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+
+<div class="img">
+    <img class="front" src="/images/wwear/f20.jpg">
+    <img class="back" src="/images/wwear/f21.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> white full sleeve top</h4>
+        <p><b>Price:</b> Rs. 800/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+<div class="img">
+    <img class="front" src="/images/wwear/f24.jpg">
+    <img class="back" src="/images/wwear/f25.jpg">
+    <div class="img-desc">
+        <h4><b>Name:</b> green full sleeve top</h4>
+        <p><b>Price:</b> Rs. 600/-</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+
+
+    </div>
+      
+    </div>
+      
+      
+
+    <script>
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px";
+        } else {
+            navbar.style.top = "0";
+            if (scrollTop === 0) {
+                navbar.classList.remove("scrolled"); 
+            } else {
+                navbar.classList.add("scrolled"); 
+                }
+            }
+        lastScrollTop = scrollTop;
+        }
+        );
+
+
+
+//Accordian
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                var isActive = this.classList.contains("active");
+
+                // Close all accordion panels
+
+                for (var j = 0; j < acc.length; j++) {
+                    var otherPanel = acc[j].nextElementSibling;
+                    if (otherPanel !== panel) {
+                        otherPanel.style.maxHeight = null;
+                        acc[j].classList.remove("active");
+                    }
+                }
+
+                if (isActive) {
+                    this.classList.remove("active");
+                    panel.style.maxHeight = null;
+                } else {
+                    this.classList.add("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                }
+            );
+        }
+
+
+    </script>
+</body>
+</html>
